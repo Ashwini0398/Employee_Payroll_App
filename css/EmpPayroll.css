@@ -57,6 +57,7 @@ body {
   align-items: center;
   min-height: calc(100% - 80px);
   background-color: #f7f7f7;
+  padding: 12px;
 }
 
 .form {
@@ -113,7 +114,7 @@ label {
 }
 
 .input {
-  width: 83%;
+  width: 81%;
   padding: 12px;
   border-radius: 4px;
   resize: vertical;
@@ -140,7 +141,7 @@ label {
 .gender {
   display: flex;
   justify-content: space-between;
-  width: 183px;
+  width: 170px;
 }
 
 .gender-female {
@@ -171,4 +172,33 @@ select {
   letter-spacing: 0px;
   color: #8f98a1;
   background-color: transparent;
+}
+
+.buttonParent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+button {
+  font-size: 14px;
+  padding: 7px 7px;
+  width: 140px;
+  font-family: "Roboto";
+  border-radius: 4px;
+  opacity: 1;
+  background-color: #e2e2e2;
+  border: none;
+  letter-spacing: 0px;
+}
+
+.submitButton {
+  margin-right: 30px;
+}
+
+.cancelButton {
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
