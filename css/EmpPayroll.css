@@ -85,27 +85,36 @@ body {
   align-items: center;
 }
 
+.row-content-name {
+  justify-content: space-between;
+}
+
+.row-content-gender {
+  width: 46%;
+  margin: 0;
+  justify-content: space-between;
+}
+
 .label {
   min-height: 140px;
 }
 
 label {
-  padding: 12px 30px 12px 0;
+  padding: 12px 12px 12px 0;
   display: inline-block;
   font-weight: bold;
 }
 
 .text {
-  font-size: 13px;
+  font-size: 16px;
   color: black;
   opacity: 1;
   font-family: Roboto;
 }
 
 .input {
-  width: 73%;
+  width: 83%;
   padding: 12px;
-  margin-left: 51px;
   border-radius: 4px;
   resize: vertical;
   border: 1px solid grey;
@@ -114,7 +123,6 @@ label {
 .profile-radio-content {
   display: flex;
   flex-direction: row;
-  margin-top: -94px;
 }
 
 .profile-radio-content label {
@@ -127,4 +135,24 @@ label {
   width: 40px;
   margin-left: 12px;
   border-radius: 5px;
+}
+
+.gender {
+  display: flex;
+  justify-content: space-between;
+  width: 183px;
+}
+
+.gender-female {
+  margin-right: 7px;
+}
+
+.row-content-department {
+  width: 70%;
+  margin-left: 14px;
+}
+
+#salary {
+  width: 60%;
+  margin-left: 46px;
 }
