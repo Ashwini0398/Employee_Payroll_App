@@ -96,16 +96,35 @@ label {
 }
 
 .text {
-  font-size: 14px;
+  font-size: 13px;
   color: black;
   opacity: 1;
   font-family: Roboto;
 }
 
 .input {
-  width: 100%;
+  width: 73%;
   padding: 12px;
-  border-radius: 10px;
+  margin-left: 51px;
+  border-radius: 4px;
   resize: vertical;
   border: 1px solid grey;
+}
+
+.profile-radio-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: -94px;
+}
+
+.profile-radio-content label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile {
+  width: 40px;
+  margin-left: 12px;
+  border-radius: 5px;
 }
