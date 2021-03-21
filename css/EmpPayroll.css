@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100px;
+}
+
+.header {
+  padding: 15px 0;
+  background-color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid green;
+}
+
+.logo-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 0px solid green;
+  width: 80%;
+}
+
+.img {
+  width: 55px;
+  margin: 5px;
+}
+
+.logo-content-img {
+  border: solid 0px #42515f;
+}
+
+.emp-text {
+  font: normal normal bold 20px/25px Montserrat;
+  font-family: Monstserrat, sans-serif;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: yellowgreen;
+}
+
+.emp-payroll {
+  color: black;
+  font-size: 17px;
+}
+
+.form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100% - 80px);
+  background-color: #f7f7f7;
+}
+
+.form {
+  width: 65%;
+  background: white;
+  padding: 44px 50px;
+  box-shadow: 0px 3px 6px grey;
+  border: 1px solid;
+  opacity: 1;
+  border-radius: 8px;
+}
+
+.form-head {
+  font: normal normal bold 24px/37px Roboto;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  opacity: 1;
+  color: #42515f;
+  padding-bottom: 26px;
+}
+
+.row-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.label {
+  min-height: 140px;
+}
+
+label {
+  padding: 12px 30px 12px 0;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 14px;
+  color: black;
+  opacity: 1;
+  font-family: Roboto;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  resize: vertical;
+  border: 1px solid grey;
+}
