@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap"
         rel="stylesheet">
+    <script src="../js/Employee.js"></script>
+
 </head>
 
 <body>
@@ -28,11 +30,11 @@
             <div class="form-head">
                 Employee Payroll Form</div>
             <div class="row-content row-content-name">
-                <label clas="text">Name</label>
+                <label class="label text">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your name..." required>
             </div>
             <div class="row-content">
-                <label class="text" for="profile">Profile Image</label>
+                <label class=" label text" for="profile">Profile Image</label>
                 <div class="profile-radio-content">
                     <label>
                         <input type="radio" id="profile1" name="profile"
@@ -54,29 +56,25 @@
                             value=" ../asserts/assets/profile-images/Ellipse -4.png" required>
                         <img class="profile" id="image4" src="../asserts/assets/profile-images/Ellipse -4.png">
                     </label>
-                    <label>
+                    <!-- <label>
                         <input type="radio" id="profile5" name="profile"
                             value="../asserts/assets/profile-images/Ellipse -5.png " required>
                         <img class="profile" id="image5" src="../asserts/assets/profile-images/Ellipse -5.png">
-                    </label>
+                    </label> -->
                 </div>
             </div>
             <div class="row-content row-content-gender">
-                <label class="text" for="gender">Gender</label>
-                <div class="gender">
-                    <div>
-                        <input type="radio" id="male" value="male" name="gender">
-                        <label class="text" for="male">Male</label>
-                    </div>
-                    <div class="gender-female">
-                        <input type="radio" id="female" value="female" name="gender">
-                        <label class="text" for="female">Female</label>
-                    </div>
+                <label class=" label text" for="gender">Gender</label>
+                <div>
+                    <input type="radio" id="male" value="male" name="gender">
+                    <label class="text" for="male">Male</label>
+                    <input type="radio" id="female" value="female" name="gender">
+                    <label class="text" for="female">Female</label>
                 </div>
             </div>
             <div class="row-content">
-                <label class="text" for="department">Department</label>
-                <div class="row-content-department">
+                <label class="label text" for="department">Department</label>
+                <div>
                     <input class="checkbox" type="checkbox" id="hr" value="HR" name="hr">
                     <label class="text" for="Hr">HR</label>
                     <input class="checkbox" type="checkbox" id="Sales" value="Sales" name="Sales">
@@ -88,14 +86,14 @@
                 </div>
             </div>
             <div class="row-content">
-                <label class="text" for="salary">Salary:</label>
+                <label class="label text" for="salary">Salary:</label>
                 <input class="input" type="range" id="salary" name="salary" min="300000" max="500000" step="100"
                     value="350000">
                 <output class="salary-output"></output>
             </div>
             <div class="row-content">
-                <label class="text" for="StartDate">Start Date:</label>
-                <div class="row-content-date">
+                <label class="label text" for="StartDate">Start Date:</label>
+                <div class>
                     <select id="Day" name="Day">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -154,23 +152,19 @@
                 </div>
             </div>
             <div class="row-content">
-                <label class="text" for="notes">Notes:</label>
-                <textarea id="notes" class="input" name="Notes" placeholder=""
-                    style="height: 100px;margin-left: 46px;"></textarea>
+                <label class="label text" for="notes">Notes:</label>
+                <textarea id="notes" class="input" name="Notes" placeholder="" style="height: 100px;"></textarea>
             </div>
             <div class="buttonParent">
                 <button><a href="./home.html" class="resetButton button cancelButton">Cancel</a></button>
                 <div class="submit-reset">
                     <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                     <button type="reset" class="button resetButton" id="resetButton">Reset</button>
-
                 </div>
-
             </div>
     </div>
     </form>
     </div>
-
 </body>
 
 </html>

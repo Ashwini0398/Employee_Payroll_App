@@ -86,18 +86,17 @@ body {
   align-items: center;
 }
 
-.row-content-name {
+/* .row-content-name {
   justify-content: space-between;
-}
+} */
 
 .row-content-gender {
-  width: 46%;
+  width: 100%;
   margin: 0;
-  justify-content: space-between;
 }
 
 .label {
-  min-height: 140px;
+  width: 20%;
 }
 
 label {
@@ -124,6 +123,7 @@ label {
 .profile-radio-content {
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
 }
 
 .profile-radio-content label {
@@ -134,33 +134,17 @@ label {
 
 .profile {
   width: 40px;
-  margin-left: 12px;
+  margin-left: 15px;
   border-radius: 5px;
 }
 
 .gender {
   display: flex;
   justify-content: space-between;
-  width: 170px;
-}
-
-.gender-female {
-  margin-right: 7px;
-}
-
-.row-content-department {
-  width: 70%;
-  margin-left: 14px;
 }
 
 #salary {
   width: 60%;
-  margin-left: 46px;
-}
-
-.row-content-date {
-  width: 50%;
-  margin-left: 19px;
 }
 
 select {
@@ -202,3 +186,23 @@ button {
   color: black;
   text-align: center;
 }
+
+/* @media only screen and(max-width: 960px) {
+  .cancelButton {
+    margin-left: 0px;
+  }
+  .gender {
+    width: 149px;
+  }
+  .row-content-date {
+    width: 53%;
+  }
+}
+@media only screen and(max-width: 600px) {
+  .form {
+    margin-top: 10px;
+  }
+  .profile-radio-content {
+    flex-flow: wrap;
+  }
+} */
