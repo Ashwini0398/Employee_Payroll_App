@@ -144,7 +144,7 @@ label {
 }
 
 #salary {
-  width: 60%;
+  width: 70%;
 }
 
 select {
@@ -187,15 +187,9 @@ button {
   text-align: center;
 }
 
-/* @media only screen and(max-width: 960px) {
+@media only screen and(max-width: 960px) {
   .cancelButton {
     margin-left: 0px;
-  }
-  .gender {
-    width: 149px;
-  }
-  .row-content-date {
-    width: 53%;
   }
 }
 @media only screen and(max-width: 600px) {
@@ -205,4 +199,4 @@ button {
   .profile-radio-content {
     flex-flow: wrap;
   }
-} */
+}
