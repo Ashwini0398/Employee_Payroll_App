@@ -8,9 +8,9 @@
     <title>Employee Payroll Form</title>
     <link rel="stylesheet" href="../css/EmpPayroll.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <script src="../js/Employee.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <script defer src="../js/Employee.js"></script>
+    <script defer src="../js/EmployeePayroll.js"></script>
 
 </head>
 
@@ -26,12 +26,13 @@
     </header>
 
     <div class="form-content">
-        <form class="form" action="#" onreset="reset()" onsubmit="save(); return false">
+        <form class="form" action="#" onreset="reset()" onsubmit="save()">
             <div class="form-head">
                 Employee Payroll Form</div>
             <div class="row-content row-content-name">
                 <label class="label text">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your name..." required>
+                <error-output class="text-error" for="text"></error-output>
             </div>
             <div class="row-content">
                 <label class=" label text" for="profile">Profile Image</label>
@@ -75,24 +76,23 @@
             <div class="row-content">
                 <label class="label text" for="department">Department</label>
                 <div>
-                    <input class="checkbox" type="checkbox" id="hr" value="HR" name="hr">
+                    <input class="checkbox" type="checkbox" id="hr" value="HR" name="department">
                     <label class="text" for="Hr">HR</label>
-                    <input class="checkbox" type="checkbox" id="Sales" value="Sales" name="Sales">
+                    <input class="checkbox" type="checkbox" id="Sales" value="Sales" name="department">
                     <label class="text" for="Sales">Sales</label>
-                    <input class="checkbox" type="checkbox" id="finance" value="finance" name="finance">
+                    <input class="checkbox" type="checkbox" id="finance" value="finance" name="department">
                     <label class="text" for="finance">Finance</label>
-                    <input class="checkbox" type="checkbox" id="engineer" value="engineer" name="engineer">
+                    <input class="checkbox" type="checkbox" id="engineer" value="engineer" name="department">
                     <label class="text" for="engineer">Engineer</label>
                 </div>
             </div>
             <div class="row-content">
                 <label class="label text" for="salary">Salary:</label>
-                <input class="input" type="range" id="salary" name="salary" min="300000" max="500000" step="100"
-                    value="350000">
+                <input class="input" type="range" id="salary" name="salary" min="300000" max="500000" step="100" value="350000">
                 <output class="salary-output text">400000</output>
             </div>
             <div class="row-content">
-                <label class="label text" for="StartDate">Start Date:</label>
+                <label class="label text" for="startDate">Start Date:</label>
                 <div class>
                     <select id="Day" name="Day">
                         <option value="1">1</option>
