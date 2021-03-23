@@ -1,112 +1,188 @@
 * {
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    margin: 0;
-    height: 100px;
+  margin: 0;
+  height: 100px;
 }
 
 .header {
-    padding: 15px 0;
-    background-color: #ffffff;
+  padding: 15px 0;
+  background-color: #ffffff;
 }
 
 .header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: cente;
-    align-items: center;
-    border: 0px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: cente;
+  align-items: center;
+  border: 0px solid green;
 }
 
 .logo-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 0px solid green;
-    width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 0px solid green;
+  width: 80%;
 }
 
 .img {
-    width: 55px;
-    margin: 5px;
+  width: 55px;
+  margin: 5px;
 }
 
 .logo-content-img {
-    border: solid 0px #42515f;
+  border: solid 0px #42515f;
 }
 
 .emp-text {
-    font: normal normal bold 20px/25px Montserrat;
-    font-family: Monstserrat, sans-serif;
-    letter-spacing: 0;
-    text-transform: capitalize;
-    color: yellowgreen;
+  font: normal normal bold 20px/25px Montserrat;
+  font-family: Monstserrat, sans-serif;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: yellowgreen;
 }
 
 .emp-payroll {
-    color: black;
-    font-size: 17px;
+  color: black;
+  font-size: 17px;
 }
 
 .add-button {
-    text-align: left;
-    font: normal normal normal 22px/29px Roboto;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    background: #82A70C;
-    font-size: medium;
-    padding: 5px 18px;
-    text-decoration: none;
-    letter-spacing: 0px;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
+  text-align: left;
+  font: normal normal normal 22px/29px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  background: #82a70c;
+  font-size: medium;
+  padding: 5px 18px;
+  text-decoration: none;
+  letter-spacing: 0px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 img {
-    width: 16%;
-    margin-right: 9px;
-    margin-top: 4px;
+  width: 17%;
+  margin-right: 9px;
+  margin-top: 4px;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100%-80px);
-    box-sizing: border-box;
-    background-color: #F7F7F7;
-    border: 1px solid;
-    padding: 30px 0px 10px;
+  display: flex;
+  height: 1;
+  flex-direction: column;
+  min-height: calc(100% - 80px);
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  border: 1px solid;
+  padding: 30px 0px 10px;
 }
 
 .header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 25px;
-    margin: 0 auto;
-    width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .emp-details-text {
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0px;
-    font-family: 'Roboto';
-    color: #4F5D6A;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  font-family: "Roboto";
+  color: #4f5d6a;
 }
 
 .emp-count {
-    display: inline;
-    background-color: #82A70C;
-    border-radius: 12px;
-    font-size: 16px;
-    width: 25px;
-    padding: 3px;
-    text-align: center;
+  display: inline;
+  background-color: #82a70c;
+  border-radius: 12px;
+  font-size: 16px;
+  width: 25px;
+  padding: 3px;
+  text-align: center;
+}
+
+.table-main {
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  margin: 3;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  margin-right: 20px;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 10px 10px;
+}
+
+.profile {
+  width: 40%;
+  margin-left: 5px;
+}
+
+th {
+  text-align: left;
+  font: normal normal medium 18px/24px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  background-color: #42515f;
+  border-radius: 1px;
+  padding: 2;
+}
+
+td {
+  text-align: left;
+  font: normal normal normal 16px/21px Roboto;
+  letter-spacing: 0px;
+  color: #3d3d3d;
+  opacity: 1;
+}
+
+tr:not(:first-child) {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+td:first-child {
+  display: flex;
+  align-items: center;
+}
+
+td img:first-child {
+  margin-right: 10px;
+}
+
+td img {
+  cursor: pointer;
+}
+.dept-label {
+  background-color: #e9fea5;
+  width: fit-content;
+  text-align: center;
+  border: 0px solid;
+  border-radius: 12px;
+  margin: 2px;
+  font-size: 16px;
+  padding: 5px;
+  display: inline;
 }
