@@ -7,16 +7,15 @@ const createInnerHtml = () => {
     "<tr><th></th><th>Name</th><th>Gender</th><th>Department</th>" +
     "<th>Salary</th><th>Start Date</th><th>Actions</th></tr>";
 
-  let employeePayrollData = createEmployeePayrollJSON()[1];
+  let employeePayrollData = createEmployeePayrollJSON()[0];
   const innerHtml = `${headerHtml} 
   <tr>
-    <td><img class="profile" alt="" src="${employeePayrollData._profilePic}"></td>
+    <td><img class="profile" alt="" src="${
+      employeePayrollData._profilePic
+    }"></td>
     <td>${employeePayrollData._name}</td>
     <td>${employeePayrollData._gender}</td>
-    <td>
-        <div class='dept-label'>${employeePayrollData._department[0]}</div>
-        <div class='dept-label'>${employeePayrollData._department[1]}</div>
-    </td>
+    <td>${getDeptHtml(employeePayrollData._department)}</td>
     <td>${employeePayrollData._salary}</td>
     <td>${employeePayrollData._startDate}</td>
     <td>
@@ -29,6 +28,14 @@ const createInnerHtml = () => {
 `;
 
   document.querySelector("#table-display").innerHTML = innerHtml;
+};
+
+const getDeptHtml = (deptList) => {
+  let deptHtml = "";
+  for (const dept of deptList) {
+    deptHtml = `${deptHtml} <div class='dept-label'>${dept}</div>`;
+  }
+  return deptHtml;
 };
 
 const createEmployeePayrollJSON = () => {
