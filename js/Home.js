@@ -3,18 +3,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 const createInnerHtml = () => {
-  console.log("table dipaly");
-  const innerHtml = ` 
+  const headerHtml =
+    "<tr><th></th><th>Name</th><th>Gender</th><th>Department</th>" +
+    "<th>Salary</th><th>Start Date</th><th>Actions</th></tr>";
+  const innerHtml = `${headerHtml} 
   <tr>
-    <th></th>
-    <th>Name</th>
-    <th>Gender</th>
-    <th>Department</th>
-    <th>Salary</th>
-    <th>Start Date</th>
-    <th>Actions</th>
-</tr>
-<tr>
     <td><img class="profile" alt="" src="../asserts/assets/profile-images/Ellipse -2.png"></td>
     <td>Ashwini Khonde</td>
     <td>Female</td>
