@@ -113,7 +113,7 @@ img {
 }
 
 .table-main {
-  width: 80%;
+  width: 79%;
   margin: 0 auto;
   overflow: auto;
 }
@@ -142,7 +142,7 @@ th {
   font: normal normal medium 18px/24px Roboto;
   letter-spacing: 0px;
   color: #ffffff;
-  text-transform: uppercase;
+  text-transform: ;
   opacity: 1;
   background-color: #42515f;
   border-radius: 1px;

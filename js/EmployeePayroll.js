@@ -56,17 +56,18 @@ const createEmployeePayroll = () => {
     setTextValue(".text-error", e);
     throw e;
   }
+  employeePayrollData.id = createId();
   employeePayrollData.profilePic = getSelectedValues("[name=profile]").pop();
   employeePayrollData.gender = getSelectedValues("[name=gender]").pop();
   employeePayrollData.department = getSelectedValues("[name=department]");
   employeePayrollData.salary = getInputValueById("#salary");
   employeePayrollData.note = getInputValueById("#notes");
   let date =
-    getInputValueById("#Day") +
+    getInputValueById("#day") +
     " " +
-    getInputValueById("#Month") +
+    getInputValueById("#month") +
     " " +
-    getInputValueById("#Year");
+    getInputValueById("#year");
   employeePayrollData.date = Date.parse(date);
   console.log(Date.parse(date));
   alert(employeePayrollData.toString());
@@ -114,4 +115,16 @@ const setTextValue = (id, value) => {
 const setValue = (id, value) => {
   const element = document.querySelector(id);
   element.value = value;
+};
+
+const createId = () => {
+  var id = localStorage.getItem("currentId");
+  if (id == undefined) {
+    localStorage.setItem("currentId", 1);
+    return 2;
+  } else {
+    id = id + 1;
+    localStorage.setItem("currentId", id);
+    return id;
+  }
 };

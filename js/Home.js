@@ -28,7 +28,7 @@ const createInnerHtml = () => {
     <td>${employeePayrollData._gender}</td>
     <td>${getDeptHtml(employeePayrollData._department)}</td>
     <td>${employeePayrollData._salary}</td>
-    <td>${employeePayrollData._startDate}</td>
+    <td>${stringifyDate(employeePayrollData._startDate)}</td>
     <td>
         <img id="${employeePayrollData._id}" onclick="remove(this)" alt="delete"
             src="../asserts/assets/icons/delete-black-18dp.svg">
@@ -48,26 +48,41 @@ const getDeptHtml = (deptList) => {
   return deptHtml;
 };
 
-const createEmployeePayrollJSON = () => {
-  let empPayrollListLocal = [
-    {
-      _name: "Ashwani Khonde",
-      _gender: "Female",
-      _department: ["HR", "sales"],
-      _salary: "500000",
-      _startDate: "29 Oct 2019",
-      _id: new Date().getTime(),
-      _profilePic: "../asserts/assets/profile-images/Ellipse -1.png",
-    },
-    {
-      _name: "Vikrant Chitte",
-      _gender: "male",
-      _department: ["HR", "Finance"],
-      _salary: "6000000",
-      _startDate: "28 nov 2019",
-      _id: new Date().getTime(),
-      _profilePic: "../asserts/assets/profile-images/Ellipse -2.png",
-    },
-  ];
-  return empPayrollListLocal;
+const remove = (node) => {
+  console.log(node);
+  let employeePayrollData = empPayrollList.find(
+    (empData) => empData._id == node.id
+  );
+  if (!employeePayrollData) return;
+  const index = empPayrollList
+    .map((empData) => empData._id)
+    .indexOf(employeePayrollData._id);
+  empPayrollList.splice(index, 1);
+  localStorage.setItem("EmployeePayrollList", JSON.stringify(empPayrollList));
+  document.querySelector(".emp-count").textContent = empPayrollList.length;
+  createInnerHtml();
 };
+
+// const createEmployeePayrollJSON = () => {
+//   let empPayrollListLocal = [
+//     {
+//       _name: "Ashwani Khonde",
+//       _gender: "Female",
+//       _department: ["HR", "sales"],
+//       _salary: "500000",
+//       _startDate: "29 Oct 2019",
+//       _id: new Date().getTime(),
+//       _profilePic: "../asserts/assets/profile-images/Ellipse -1.png",
+//     },
+//     {
+//       _name: "Vikrant Chitte",
+//       _gender: "male",
+//       _department: ["HR", "Finance"],
+//       _salary: "6000000",
+//       _startDate: "28 nov 2019",
+//       _id: new Date().getTime(),
+//       _profilePic: "../asserts/assets/profile-images/Ellipse -2.png",
+//     },
+//   ];
+//   return empPayrollListLocal;
+// };
