@@ -63,26 +63,10 @@ const remove = (node) => {
   createInnerHtml();
 };
 
-// const createEmployeePayrollJSON = () => {
-//   let empPayrollListLocal = [
-//     {
-//       _name: "Ashwani Khonde",
-//       _gender: "Female",
-//       _department: ["HR", "sales"],
-//       _salary: "500000",
-//       _startDate: "29 Oct 2019",
-//       _id: new Date().getTime(),
-//       _profilePic: "../asserts/assets/profile-images/Ellipse -1.png",
-//     },
-//     {
-//       _name: "Vikrant Chitte",
-//       _gender: "male",
-//       _department: ["HR", "Finance"],
-//       _salary: "6000000",
-//       _startDate: "28 nov 2019",
-//       _id: new Date().getTime(),
-//       _profilePic: "../asserts/assets/profile-images/Ellipse -2.png",
-//     },
-//   ];
-//   return empPayrollListLocal;
-// };
+
+const update = (node) =>{
+  let employeePayrollData = empPayrollList.find(empData => empData._id == node.id)
+  if(!employeePayrollData) return;
+  localStorage.setItem('editEmp',JSON.stringify(employeePayrollData))
+  window.location.replace(site_properties.add_emp_payroll_page);
+}
