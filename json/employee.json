@@ -1,0 +1,52 @@
+{
+  "employees": [
+    {
+      "department": [
+        "HR"
+      ],
+      "gender": "female",
+      "name": "Ashwini suresh khonde",
+      "note": "",
+      "profilePic": "../asserts/assets/profile-images/Ellipse -1.png ",
+      "salary": "350000",
+      "startDate": "2021-04-20T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "department": [
+        "HR"
+      ],
+      "gender": "male",
+      "name": "vikrant",
+      "note": "",
+      "profilePic": "../asserts/assets/profile-images/Ellipse -1.png ",
+      "salary": "450000",
+      "startDate": "2021-04-21T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "department": [
+        "Finance"
+      ],
+      "gender": "female",
+      "name": "Anju",
+      "note": "",
+      "profilePic": "../asserts/assets/profile-images/Ellipse -1.png ",
+      "salary": "550000",
+      "startDate": "2021-04-20T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "department": [
+        "HR"
+      ],
+      "gender": "male",
+      "name": "Rahul",
+      "note": "",
+      "profilePic": "../asserts/assets/profile-images/Ellipse -1.png ",
+      "salary": "350000",
+      "startDate": "2021-04-21T18:30:00.000Z",
+      "id": 4
+    }
+  ]
+}

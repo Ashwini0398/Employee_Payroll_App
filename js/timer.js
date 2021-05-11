@@ -19,5 +19,5 @@ setTimeout(showSessionExpire, 5000);
 console.log(
   "Activity- A triggerd Activity- B at  " +
     showTime() +
-    "  will be execute after 5 seconds"
+    " will be execute after 5 seconds"
 );
